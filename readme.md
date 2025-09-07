@@ -15,10 +15,23 @@ chmod -R 775 /var/www/bootstrap/cache
 chmod -R 775 /var/www/database
 chown -R www-data:www-data storage bootstrap/cache database
 
-Setting database di .env :
+Setting di .env :
+
+# Database
+
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=laravel
 DB_PASSWORD=laravel
+
+# Redis
+
+REDIS_HOST=redis
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+# Queue
+
+QUEUE_CONNECTION=redis
