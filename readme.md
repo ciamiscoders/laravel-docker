@@ -1,3 +1,13 @@
+Sebelum build buat folder ./mysql/data dan ./src
+mkdir -p mysql/data
+mkdir -p src
+
+docker compose up -d --build
+
+docker compose exec -it app bash
+
+composer create-project laravel/laravel .
+
 Setelah menginstal laravel jalankan perintah berikut agar PHP-FPM di container punya izin nulis ke folder database/ storage/ dan bootstrap/cache/.
 
 chmod -R 775 /var/www/storage
