@@ -34,6 +34,7 @@ chown -R www-data:www-data storage bootstrap/cache database
 
 6. Sesuaikan setting di .env :
 
+```
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
@@ -46,3 +47,4 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 
 QUEUE_CONNECTION=redis
+```
